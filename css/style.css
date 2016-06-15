@@ -475,8 +475,8 @@ hr {
 .grid figure img {
   position: relative;
   display: block;
-  min-height: 100%;
-  max-width: 100%;
+  height: 350px;
+  width: auto;
 }
 
 .grid figure figcaption {
@@ -543,18 +543,18 @@ figure.effect-zoe p.icon-links a {
 figure.effect-zoe:hover figcaption,
 figure.effect-zoe:hover h2,
 figure.effect-zoe:hover p.icon-links a {
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
+ /* -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);*/
 }
 
 figure.effect-zoe:hover h2 {
-  -webkit-transition-delay: 0.05s;
-  transition-delay: 0.05s;
+ /* -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;*/
 }
 
 figure.effect-zoe:hover p.icon-links a:first-child {
-  -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
+  /*-webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;*/
 }
 
 #portfolio .portfolio-bottom  {
