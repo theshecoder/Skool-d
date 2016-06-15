@@ -11,6 +11,11 @@
 	<meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Angular -->
+    <script type="text/javascript" src="http://code.angularjs.org/1.2.25/angular.min.js"></script>
+    <script type="text/javascript" src="js/modules/promise-tracker.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
 	<!-- Bootstrap CSS
    ================================================== -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -249,7 +254,7 @@
 					<img src="images/Amanda-01.jpg" class="img-responsive" alt="team img">
 						<div class="team-des">
 							<h4>Amanda Fisher</h4>
-							<h3><a href="https://www.linkedin.com/in/amandajofisher">Frontend Developer</a></h3>
+							<h3><a href="https://www.linkedin.com/in/amandajofisher" target="_blank">Frontend Developer</a></h3>
 						</div>
 				</div>
 			</div>
@@ -259,7 +264,7 @@
 					<img src="images/Justin-01.jpg" class="img-responsive" alt="team img">
 						<div class="team-des">
 							<h4>Justin Liu</h4>
-							<h3><a href="https://www.linkedin.com/in/justin-liu-b7707529">Fullstack Developer</a></h3>
+							<h3><a href="https://www.linkedin.com/in/justin-liu-b7707529" target="_blank">Fullstack Developer</a></h3>
 						</div>
 				</div>
 			</div>
@@ -269,7 +274,7 @@
 					<img src="images/Russell-01.jpg" class="img-responsive" alt="team img">
 						<div class="team-des">
 							<h4>Russell Smith</h4>
-							<h3><a href="https://www.linkedin.com/in/amandajofisher">Backend Developer</a></h3>
+							<h3><a href="https://www.linkedin.com/in/russell-smith-16b60b48" target="_blank">Backend Developer</a></h3>
 						</div>
 				</div>
 			</div>
@@ -279,7 +284,7 @@
 					<img src="images/David-01.png" class="img-responsive" alt="team img">
 						<div class="team-des">
 							<h4>David Taylor</h4>
-							<h3><a href="https://www.linkedin.com/in/david-taylor-9a741371">Fullstack Developer</a></h3>
+							<h3><a href="https://www.linkedin.com/in/david-taylor-9a741371" target="_blank">Fullstack Developer</a></h3>
 						</div>
 				</div>
 			</div>
@@ -289,7 +294,7 @@
 					<img src="images/Brian-01.png" class="img-responsive" alt="team img">
 						<div class="team-des">
 							<h4>Brian Tiu</h4>
-							<h3><a href="https://www.linkedin.com/in/brian-tiu-155883b4?trk=nav_responsive_tab_profile">Frontend Developer</a></h3>
+							<h3><a href="https://www.linkedin.com/in/brian-tiu-155883b4?trk=nav_responsive_tab_profile" target="_blank">Frontend Developer</a></h3>
 						</div>
 				</div>
 			</div>
@@ -314,7 +319,7 @@
 			<div class="col-md-6 col-sm-12">
 				<h3 class="color-white">OUR STORY</h3>
 				<!-- <h2>SKOOL'D</h2> -->
-				<p class="color-white">Skool'd is an application created for a capstone project in computer science at <a rel="nofollow" href="https://www.byu.edu" target="_parent">Brigham Young University</a>. This application was created using <a rel="nofollow" href="https://developer.xamarin.com/" target="_parent">Xamarin</a>, a multi-platform langauge. This application allows for the planning of all assignments and exams in conjuction with the learning management system, Learnng Suite, at BYU. In addition, Skool'd provides time estimates and difficulty ratings for assignments in each particular class and provides a live feed of BYU's testing center. Skool'd is currently available on Android and IOS devices. </p>
+				<p class="color-white">Skool'd is an application created for a capstone project in computer science at <a rel="nofollow" href="https://www.byu.edu" target="_blank">Brigham Young University</a>. This application was created using <a rel="nofollow" href="https://developer.xamarin.com/" target="_blank">Xamarin</a>, a multi-platform langauge. This application allows for the planning of all assignments and exams in conjuction with the learning management system, Learnng Suite, at BYU. In addition, Skool'd provides time estimates and difficulty ratings for assignments in each particular class and provides a live feed of BYU's testing center. Skool'd is currently available on Android and IOS devices. </p>
 				<!-- <p class="color-white">Excepteu sunt in culpa qui officia deserunt mollit anim id. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> -->
 			</div>
 
@@ -332,7 +337,7 @@
     					</div>
    						<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
       						<div class="panel-body">
-        						<p>Amanda...</p>
+        						<p>I was majorly involved with the user interface design and user experience of Skool'd. With the hiccups in my development environment, I helped with the views and viewmodels. I also completed all user testing and feedback, was heavily involved with the main design, layout and color scheme of the application, prepared the demo and powerpoint, and developed the entirety of the Skool'd website.</p>
       						</div>
    						 </div>
  					 </div>
@@ -362,7 +367,8 @@
     					</div>
    						<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
       						<div class="panel-body">
-        						<p>Russell...</p>
+        						<p>My contributions to our projects were on the backend of our app. I set up our server using nodeJS as well as the corresponding SQL server.  The server validates the user as a byu student, encrypts and connects the user to Learningsuite, as well as stores task information for each user in the database. BYU uses Central Authentication System (CAS) to validate users and has a CAS ticket request API. I set up our server to validate through their CAS system.  This allows us to map users to their stored tasks securely without having to create our own authentication system. I learned the inner workings of how CAS works and how to implement it.
+	On the client side, I also worked on the backend. I setup the local sqlite server and app connections to the server. This included all the courses, assignments, and task information for the users so they would not have to make long Learningsuite queries while loading the app.  I used a tagging library that is associated with the model classes for quick storage into the database. All of that code was able to be Xamarin shared code except the ability to get the file locations on the phone.  Separate classes had to be injected just for getting the database location, but other than that, Xamarin handled the cross platform flawlessly with the tagging library used.</p>
       						</div>
    						 </div>
  					 </div>
@@ -392,7 +398,8 @@
     					</div>
    						<div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
       						<div class="panel-body">
-        						<p>Brian...</p>
+        						<p>In the beginning of the project I was in charge of the login, assignment, and to do view. After working on it for a while, I switched over and worked on some of the json parts of the project.  I also worked on the settings part of the project.
+								</p>
       						</div>
    						 </div>
  					 </div>
@@ -456,11 +463,11 @@
  			<div class="col-md-4 col-sm-6">		
  				<div class="grid">		
                		<figure class="effect-zoe">		
- 						<img src="images/mainpage2-01.png" alt="portfolio img"/>		
+ 						<img src="images/mainpage2-01.PNG" alt="portfolio img"/>		
  							<figcaption>		
  								<h2>Assignment Modal</h2>		
  								<p class="icon-links">		
- 									<a href="images/mainpage2-01.png" data-lightbox-gallery="portfolio-gallery"><span class="icon icon-attachment"></span></a>		
+ 									<a href="images/mainpage2-01.PNG" data-lightbox-gallery="portfolio-gallery"><span class="icon icon-attachment"></span></a>		
  								</p>		
  							</figcaption>			      		
  					</figure>		
@@ -470,11 +477,11 @@
              <div class="col-md-4 col-sm-6">		
  				<div class="grid">		
                		<figure class="effect-zoe">		
- 						<img src="images/planning-01.png" alt="portfolio img"/>		
+ 						<img src="images/planning-01.PNG" alt="portfolio img"/>		
  							<figcaption>		
  								<h2>Assignment Modal</h2>		
  								<p class="icon-links">		
- 									<a href="images/planning-01.png" data-lightbox-gallery="portfolio-gallery"><span class="icon icon-attachment"></span></a>		
+ 									<a href="images/planning-01.PNG" data-lightbox-gallery="portfolio-gallery"><span class="icon icon-attachment"></span></a>		
  								</p>		
  							</figcaption>			      		
  					</figure>		
@@ -493,78 +500,36 @@
  							</figcaption>			      		
  					</figure>		
  				</div>		
-             </div>   		
- -		
- -<!--             <div class="col-md-4 col-sm-6">		
- -				<div class="grid">		
- -              		<figure class="effect-zoe">		
- -						<img src="images/portfolio-img2.jpg" alt="portfolio img"/>		
- -							<figcaption>		
- -								<h2>Trip Planning</h2>		
- -								<p class="icon-links">		
- -									<a href="images/portfolio-img2.jpg" data-lightbox-gallery="portfolio-gallery"><span class="icon icon-attachment"></span></a>		
- -								</p>		
- -							</figcaption>			      		
- -					</figure>		
- -				</div>		
- -            </div> 		
- -		
- -            <div class="col-md-4 col-sm-6">		
- -				<div class="grid">		
- -              		<figure class="effect-zoe">		
- -						<img src="images/portfolio-img3.jpg" alt="portfolio img"/>		
- -							<figcaption>		
- -								<h2>Scheduling</h2>		
- -								<p class="icon-links">		
- -									<a href="images/portfolio-img3.jpg" data-lightbox-gallery="portfolio-gallery"><span class="icon icon-attachment"></span></a>		
- -								</p>		
- -							</figcaption>			      		
- -					</figure>		
- -				</div>		
- -            </div> 		
- -          			
- -          	<div class="col-md-4 col-sm-6">		
- -				<div class="grid">		
- -              		<figure class="effect-zoe">		
- -						<img src="images/portfolio-img4.jpg" alt="portfolio img"/>		
- -							<figcaption>		
- -								<h2>Arranging</h2>		
- -								<p class="icon-links">		
- -									<a href="images/portfolio-img4.jpg" data-lightbox-gallery="portfolio-gallery"><span class="icon icon-attachment"></span></a>		
- -								</p>		
- -							</figcaption>			      		
- -					</figure>		
- -				</div>		
- -            </div> 		
- -		
- -            <div class="col-md-4 col-sm-6">		
- -				<div class="grid">		
- -              		<figure class="effect-zoe">		
- -						<img src="images/portfolio-img5.jpg" alt="portfolio img"/>		
- -							<figcaption>		
- -								<h2>Organizing</h2>		
- -								<p class="icon-links">		
- -									<a href="images/portfolio-img5.jpg" data-lightbox-gallery="portfolio-gallery"><span class="icon icon-attachment"></span></a>		
- -								</p>		
- -							</figcaption>			      		
- -					</figure>		
- -				</div>		
- -            </div> 		
- -		
- -            <div class="col-md-4 col-sm-6">		
- -				<div class="grid">		
- -              		<figure class="effect-zoe">		
- -						<img src="images/portfolio-img6.jpg" alt="portfolio img"/>		
- -							<figcaption>		
- -								<h2>Grouping</h2>		
- -								<p class="icon-links">		
- -									<a href="images/portfolio-img6.jpg" data-lightbox-gallery="portfolio-gallery"><span class="icon icon-attachment"></span></a>		
- -								</p>		
- -							</figcaption>			      		
- -					</figure>		
- -				</div>		
- -            </div>  -->		
- -
+             </div>  
+
+             <div class="col-md-4 col-sm-6">		
+ 				<div class="grid">		
+               		<figure class="effect-zoe">		
+ 						<img src="images/planningpage-01.png" alt="portfolio img"/>		
+ 							<figcaption>		
+ 								<h2>Assignment Modal</h2>		
+ 								<p>		
+ 									<img src="images/planningpage-01.png"><!-- data-lightbox-gallery="portfolio-gallery"><span class="icon icon-attachment"></span>	 -->	
+ 								</p>		
+ 							</figcaption>			      		
+ 					</figure>		
+ 				</div>		
+             </div>  
+
+             <div class="col-md-4 col-sm-6">		
+ 				<div class="grid">		
+               		<figure class="effect-zoe">		
+ 						<img src="images/mainpage-01.png" alt="portfolio img"/>		
+ 							<figcaption>		
+ 								<h2>Assignment Modal</h2>		
+ 								<p class="icon-links">		
+ 									<img src="images/mainpage-01.png" data-lightbox-gallery="portfolio-gallery"><span class="icon icon-attachment"></span>		
+ 								</p>		
+ 							</figcaption>			      		
+ 					</figure>		
+ 				</div>		
+             </div>  		
+
 
             <!-- Portfolio bottom section
 			================================================== -->
@@ -622,22 +587,22 @@
 
 			<!-- Contact form section
 			================================================== -->
-			<div class="col-md-offset-1 col-md-10 col-sm-12">
-				<form action="#" method="post" class="wow fadeInUp" data-wow-delay="0.6s">
+			<div data-ng-controller = "help" class="col-md-offset-1 col-md-10 col-sm-12">
+				<form action="#" method="post" class="wow fadeInUp" data-wow-delay="0.6s" name = "helpForm" novalidate role="form">
 					<div class="col-md-4 col-sm-6">
-						<input type="text" class="form-control" placeholder="Name" name="name">
+						<input type="text" class="form-control" data-ng-model="name"placeholder="Name" name="name">
 					</div>
 					<div class="col-md-4 col-sm-6">
-						<input type="email" class="form-control" placeholder="Email" name="email">
+						<input type="email" class="form-control" placeholder="Email" data-ng-model="email" class="form-control" name="email">
 					</div>
 					<div class="col-md-4 col-sm-12">
-						<input type="text" class="form-control" placeholder="Subject" name="subject">
+						<input type="text" class="form-control" placeholder="Subject" data-ng-model="subjectList" data-ng-options="id as value for (id, value) in subjectListOptions" name="subject">
 					</div>
 					<div class="col-md-12 col-sm-12">
-						<textarea class="form-control" placeholder="Message" rows="7" name"message"></textarea>
+						<textarea data-ng-model="comments" class="form-control" placeholder="Message" rows="7" name"message"></textarea>
 					</div>
 					<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
-						<input type="submit" class="form-control" value="SHOOT MESSAGE">
+						<input type="submit" class="form-control" data-ng-disabled="progress.active()" data-ng-click="submit(helpForm)" value="SHOOT MESSAGE">
 					</div>
 				</form>
 			</div>
@@ -676,7 +641,7 @@
 					<li><a href="#" class="fa fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
 					<li><a href="#" class="fa fa-instagram wow fadeIn" data-wow-delay="0.9s"></a></li>
 					<!-- <li><a href="#" class="fa fa-behance wow fadeIn" data-wow-delay="1s"></a></li> -->
-					<li><a href="https://github.com/theshecoder/Skool-d" class="fa fa-github wow fadeIn" data-wow-delay="1.3s"></a></li>
+					<li><a href="https://github.com/theshecoder/Skool-d" target="_blank" class="fa fa-github wow fadeIn" data-wow-delay="1.3s"></a></li>
 					<!-- <li><a href="#" class="fa fa-tumblr wow fadeIn" data-wow-delay="1.6s"></a></li> -->
 				</ul>
 				<p>Copyright &copy; 2016 SKOOL'D
